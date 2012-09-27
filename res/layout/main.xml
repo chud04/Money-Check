@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:id="@+id/topbar_main"
+        style="@style/TitleBar" >
+
+        <Button
+            android:id="@+id/save_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/save_button"
+            android:onClick="saveTable" >
+        </Button>
+
+        <ImageView style="@style/TitleBarSeparator" >
+        </ImageView>
+
+        <TextView
+            style="@style/TitleBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilanites" />
+
+        <ImageView style="@style/TitleBarSeparator" >
+        </ImageView>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_button"
+            android:onClick="details" >
+        </Button>
+
+        <ImageView style="@style/TitleBarSeparator" >
+        </ImageView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_button"
+            android:onClick="info" >
+        </Button>
+
+        <ImageView style="@style/TitleBarSeparator" >
+        </ImageView>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/quit_button"
+            android:onClick="quit" >
+        </Button>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/topbar_main"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/group" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </Spinner>
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/amount" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/amount_edit_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned" >
+            </EditText>
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/spent_on" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/spent_on_edit_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences" >
+            </EditText>
+
+            <Button
+                android:id="@+id/save_text_button"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dip"
+                android:onClick="saveTable"
+                android:text="@string/save" >
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

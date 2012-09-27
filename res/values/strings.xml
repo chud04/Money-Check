@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Main!</string>
+    <string name="app_name">Money Check</string>
+    <string name="summing_line">Total: </string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="week">This Week</string>
+    <string name="amount">Amount</string>
+    <string name="group">Group</string>
+    <string name="spent_on">Spent On</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="change_group">Change Group</string>
+    <string name="illegal_entry_amount">Please enter the amount</string>
+    <string name="illegal_entry_spenton">Please enter where you spent it</string>
+    <string name="illegal_unknown">Unknown error. Information not saved</string>
+    <string name="legal_entry">Information has been saved</string>
+    <string name="rate_us">Rate the app on android market!</string>
+    <string name="addnewgp">Add new group</string>
+	<string name="details">Details</string>
+	<string name="sharemail">E-mail what you see</string>
+	<string name="deletegroup">Delete Group</string>
+	<string name="all">All</string>
+	<string name="month">Month</string>
+	<string name="duration">Select time</string>
+	<string name="ok">OK</string>
+	<string name="info_text_main">
+	    This is a fast app designed specifically for people having no time to wait while an app loads before they can use it. 
+	    \n\nTo add or delete a group, press the menu button on the first screen and select the appropriate command. To delete a record or change its group, long press it. When a group deletes, all its records transfer to None group.
+	    \n\nKindly rate us on the Android App Market if you like the app. Future updates depend on the comments and ratings of the current version.
+	    \n\nOnce again, I thank you for downloading this app. Email us your suggestions or comments to pilanites@gmail.com 
+	</string>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:id="@+id/info_bar"
+        style="@style/TitleBar" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_button"
+            android:onClick="addNew" >
+        </Button>
+
+        <ImageView style="@style/TitleBarSeparator" >
+        </ImageView>
+
+        <TextView
+            style="@style/TitleBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About" />
+
+        <ImageView style="@style/TitleBarSeparator" >
+        </ImageView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_button"
+            android:onClick="details" >
+        </Button>
+
+        <ImageView style="@style/TitleBarSeparator" >
+        </ImageView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/quit_button"
+            android:onClick="quit" >
+        </Button>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignRight="@+id/maintext"
+        android:layout_below="@+id/info_bar" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/maintext"
+                style="@style/text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center_horizontal"
+                android:text="Money Check"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:text="@string/rate_us"
+                android:textSize="15sp" >
+            </TextView>
+
+            <Button
+                android:id="@+id/rateButton"
+                android:layout_width="185dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dip"
+                android:text="Rate it!" android:onClick="rateIt">
+            </Button>
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_text_main"
+                android:textSize="17sp" android:padding="10dp">
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

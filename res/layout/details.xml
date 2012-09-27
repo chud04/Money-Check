@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:id="@+id/main_bar_details"
+        style="@style/TitleBar" >
+
+        <Button
+            android:id="@+id/add_btn_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_button"
+            android:onClick="addNew" >
+        </Button>
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <Spinner
+            android:id="@+id/group_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </Spinner>
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_button"
+            android:onClick="info" >
+        </Button>
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <Button
+            android:id="@+id/timebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/calendar_button" 
+            android:onClick="selectDuration">
+        </Button>
+
+        <ImageView style="@style/TitleBarSeparator" >
+        </ImageView>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/quit_button"
+            android:onClick="quit" >
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sum"
+        style="@style/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_bar_details"
+        android:layout_marginTop="20dip"
+        android:gravity="center_horizontal"
+        android:text="Kuchcho" >
+    </TextView>
+
+    <ListView
+        android:id="@+id/record_id"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/sum"
+        android:layout_marginTop="20dip"
+        android:cacheColorHint="#00000000" >
+    </ListView>
+
+</RelativeLayout>
